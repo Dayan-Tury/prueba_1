@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenidos a House of Pizza, tu lugar ideal para disfrutar las mejores pizzas artesanales.">
+    <title>House of Pizza</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="icon" href="../assets/Logo.png" type="image/png">
+
+</head>
+<body class="presupuesto">
+    <div class="contenedor-principal">
+        <!-- Encabezado con logo y menú -->
+        <header>
+            
+            <nav class="nav_header">
+                
+                <img src="../assets/logo_P.png" alt="Logotipo de la empresa" width="500" height="500" class="logo">
+                <p class="empresa">House of Pizza</p>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Galería</a></li>
+                    <li><a href="./presupuesto.html" class="activo">Presupuesto</a></li>
+                    <li><a href="./contactos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="container">  
+            <form id="myForm" name="myForm" action="#" method="get" target="_self">
+                <ul class="flex-outer">
+                    <li>
+                        <label for="first-name">Nombre</label>
+                        <input type="text" id="first-name" name="first-name" 
+                            placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,15}"
+                            title="Escriba sólo letras entre 3 y 15 caracteres" required>
+                    </li>
+                    <li>
+                        <label for="surname">Apellido</label>
+                        <input type="text" id="surname" name="surname" 
+                            placeholder="Escriba sus apellidos" pattern="[A-Z a-z]{4,40}"
+                            title="Escriba sólo letras entre 4 y 40 caracteres" required>
+                    </li>
+                    <li>
+                        <label for="email">Corre Electrónico</label>
+                        <input type="email" id="email" name="email" 
+                            placeholder="Escriba su correo electrónico" pattern="[a-zA-Z0-9_-.]+@[a-z0-9._-]+\.[a-z]{2,4}"
+                            title="Escriba su correo electrónico" required>
+                    </li>
+                    <li>
+                        <label for="telephone">Teléfono</label>
+                        <input type="tel" id="telephone" name="telephone" 
+                            placeholder="Escriba su teléfono" pattern="[0-9]{9}"
+                            title="Escriba los 9 números de su teléfono movil" required>
+                    </li>
+                    <li>
+                        <label for="message">Solicite mas información</label>
+                        <textarea rows="6" id="message" placeholder="Escriba aquí su mensaje"></textarea>
+                    </li>
+                    <li>
+                        
+                        <ul class="flex-inner">
+                            <li>
+                                <label>
+                                    <input type="checkbox" required> Acepto la política de privacidad
+                                </label>
+                            </li>
+                            
+                        
+                        </ul>
+                    </li>
+                    <li class="liButtons">
+                        <button type="reset">Borrar</button>
+                        <button type="submit"> Enviar </button>
+                    </li>
+                </ul>
+            </form>
+        </div>    
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://facebook.com"><img src="../assets/redes_sociales/Logo_de_Facebook.png" alt="Facebook" width="1200" height="1202"></a>
+            <a href="https://twitter.com"><img src="../assets/redes_sociales/twitter.png" alt="Twitter" width="900" height="900"></a>
+            <a href="https://instagram.com"><img src="../assets/redes_sociales/images.jpeg" alt="Instagram" width="225" height="225"></a>
+        </div>
+        <p>
+            Calle Principal #123, Ciudad, País | 
+            <a href="./aviso_legal.html">Aviso Legal</a>
+        </p>
+    </footer>
+</body>
+</html>
