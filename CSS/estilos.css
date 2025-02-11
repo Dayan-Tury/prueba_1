@@ -65,6 +65,19 @@ header .menu {
     border-radius: 5px;
 }
 
+/* Para que el header se adapte en móviles */
+@media (max-width: 768px) {
+    .nav_header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 /* Estilo al pasar el mouse */
 .menu a:hover {
     background-color: #f0f0f0;
@@ -92,6 +105,18 @@ footer .redes-sociales img {
 
 footer .redes-sociales img:hover {
     transform: scale(1.1);
+}
+
+/* Ajuste en móviles */
+@media (max-width: 768px) {
+    .redes-sociales {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }
 
 /*------------PRODUCTOS--------------*/
